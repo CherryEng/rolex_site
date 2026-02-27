@@ -19,7 +19,7 @@ export const initAutoSequence = () => {
 		for (let i = 0; i < FRAME_COUNT; i++) {
 			const img = new Image();
 			const padded = String(i).padStart(4, '0');
-			img.src = `../images/page01/colors/${watch}/land-dweller-${padded}.avif`;
+			img.src = `images/page01/colors/${watch}/land-dweller-${padded}.avif`;
 		}
 	}
 
@@ -27,7 +27,7 @@ export const initAutoSequence = () => {
 	function updateImage() {
 		const frame = Math.floor(currentFrame);
 		const padded = String(frame).padStart(4, '0');
-		image.src = `../images/page01/colors/${currentWatch}/land-dweller-${padded}.avif`;
+		image.src = `images/page01/colors/${currentWatch}/land-dweller-${padded}.avif`;
 	}
 
 	/* ========= 自動回転 ========= */
