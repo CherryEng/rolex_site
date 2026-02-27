@@ -1,0 +1,39 @@
+@use './_variables.scss' as *;
+
+// ホバーエフェクト
+.hover_color_ocean_green {
+	transition: color 0.4s;
+
+	&:hover {
+		color: $ocean-green;
+	}
+}
+
+.hover_color_green {
+	transition: color 0.4s;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+.hover_zoom {
+	transition: transform 0.5s;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+// スクロールアニメーション
+.fade-item {
+	opacity: 0;
+	transform: translateY(24px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	will-change: opacity, transform;
+
+	&.is-visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

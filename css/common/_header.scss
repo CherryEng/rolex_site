@@ -1,0 +1,57 @@
+@use './_variables.scss' as *;
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	background: #000;
+	color: #fff;
+
+	transform: translateY(0);
+	transition: transform 0.4s ease;
+	will-change: transform;
+
+	&.is-hidden {
+		transform: translateY(-100%);
+	}
+}
+
+.header_container {
+	background: linear-gradient(90deg, $gradient-dark-green-from, $gradient-dark-green-to);
+	color: $pure-white;
+	font-weight: 700;
+	position: relative;
+	z-index: 3;
+	height: 100px;
+	display: flex;
+	align-items: center;
+
+	.header_inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+
+		.logo {
+			width: 2.5rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateY(-50%);
+		}
+
+		ul {
+			display: flex;
+			gap: 1rem;
+
+			li {
+				cursor: pointer;
+				user-select: none;
+
+				img {
+					width: 1.25rem;
+				}
+			}
+		}
+	}
+}

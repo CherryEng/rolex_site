@@ -1,0 +1,48 @@
+@use './_variables.scss' as *;
+
+.navi_container {
+	background: linear-gradient(90deg, $gradient-dark-green-from, $gradient-dark-green-to);
+	color: $pure-white;
+	font-weight: 700;
+	transition: all 0.5s;
+	transform: translateY(-150%);
+	min-height: 100vh;
+	position: absolute;
+	z-index: 1;
+	.navi_inner {
+		display: flex;
+		padding-top: $space-xl;
+
+		.page_navi {
+			width: 30%;
+			font-size: 1.5rem;
+			padding-left: $space-pd;
+
+			li {
+				margin-bottom: $space-sm;
+			}
+
+			.group {
+				margin-bottom: $space-lg;
+			}
+
+			.small {
+				font-size: 1rem;
+			}
+		}
+
+		.watches_navi {
+			width: 70%;
+			padding-top: $space-xl;
+
+			h2 {
+				font-size: 2.5rem;
+				margin-bottom: $space-md;
+			}
+		}
+	}
+
+	&.open {
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,40 @@
+@use '../common/_variables.scss' as *;
+
+#origins {
+    margin-bottom: $space-pd;
+
+    .heading {
+        width: 45%;
+        margin: 0 auto $space-pd;
+
+        h2 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: $space-md;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+    }
+
+    .flex {
+        display: flex;
+        gap: $space-xs;
+
+        a {
+            overflow: hidden;
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        img {
+            transition: transform 0.5s;
+        }
+    }
+}

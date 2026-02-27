@@ -1,0 +1,129 @@
+@use '../common/_variables.scss' as *;
+
+#viewer {
+	margin-bottom: $space-pd;
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
+
+		.desc {
+			width: 33%;
+			align-content: center;
+
+			.bold {
+				font-weight: 700;
+				margin-bottom: $space-md;
+			}
+
+			h3 {
+				font-size: 2rem;
+				font-weight: 700;
+				margin-bottom: $space-md;
+			}
+
+			.text {
+				width: 80%;
+				font-size: 1.5rem;
+				line-height: 1.5;
+				margin-bottom: $space-md;
+			}
+
+			a {
+				color: $ocean-green;
+				font-weight: 700;
+				transition: color 0.3s;
+				display: flex;
+				align-items: center;
+
+				&:hover {
+					color: $pure-white;
+				}
+
+				img {
+					width: 1.5rem;
+				}
+			}
+		}
+
+		.watch_canvas {
+			width: 33%;
+
+			img {
+				transition: opacity 0.4s ease-in-out;
+
+				&.fade-out {
+					opacity: 0;
+				}
+			}
+		}
+
+		.btn_area {
+			width: 33%;
+			position: relative;
+
+			#toggle_auto {
+				&.is-on {
+					background-image: url(../images/icons/icon_stop.svg);
+				}
+
+				display: block;
+				width: 3rem;
+				height: 3rem;
+				border-radius: 50%;
+				background-image: url(../images/icons/icon_start.svg);
+				background-repeat: no-repeat;
+				background-size: 1rem;
+				background-color: $gray;
+				background-position: center;
+				position: absolute;
+				bottom: 4rem;
+				right: 0;
+			}
+		}
+	}
+
+	.watch_tabs {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+
+		li {
+			width: 1.5rem;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				bottom: -1.5rem;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			&:nth-child(1)::after {
+				content: '40';
+			}
+
+			&:nth-child(2)::after {
+				content: '40';
+			}
+
+			&:nth-child(3)::after {
+				content: '36';
+			}
+
+			button {
+				&.is-active::after {
+					content: '';
+					width: 1.5rem;
+					height: 1.5rem;
+					border-radius: 50%;
+					border: 1px solid $ocean-green;
+					position: absolute;
+					top: 0;
+					left: 0;
+					transform: scale(1.4);
+				}
+			}
+		}
+	}
+}

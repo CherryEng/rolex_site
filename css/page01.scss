@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+// モジュール読み込み
+// common 
+@use 'common/_reset.scss';
+@use 'common/_variables.scss';
+@use 'common/_settings.scss';
+@use 'common/_utils.scss';
+@use 'common/_animation.scss';
+@use 'common/_header.scss';
+@use 'common/_hamburger.scss';
+@use 'common/_navigation.scss';
+@use 'common/_naviSwiper.scss';
+@use 'common/_footer.scss';
+
+// page01 
+@use 'page01/_detailHeader.scss';
+@use 'page01/_hero.scss';
+@use 'page01/_watchVideo.scss';
+@use 'page01/_watchSlides.scss';
+@use 'page01/_innovation.scss';
+@use 'page01/_origins.scss';
+@use 'page01/_viewer.scss';
+@use 'page01/_parts.scss';

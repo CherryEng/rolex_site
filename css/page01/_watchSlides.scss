@@ -1,0 +1,81 @@
+@use '../common/_variables.scss' as *;
+
+#watch_slides {
+    width: 100%;
+    position: relative;
+    margin-bottom: $space-pd;
+    overflow: hidden;
+
+    .swiper {
+        width: 70%;
+        overflow: visible;
+
+        .swiper-slide {
+            overflow: hidden;
+
+            &:not(.swiper-slide-visible) {
+                img {
+                    filter: blur(8px);
+                    pointer-events: none;
+                }
+            }
+        }
+
+    }
+
+    .detail-button-prev,
+    .detail-button-next {
+        transition: background 0.3s;
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        z-index: 1;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+    }
+
+    .detail-button-prev.swiper-button-disabled,
+    .detail-button-next.swiper-button-disabled {
+        opacity: .3;
+        cursor: auto;
+    }
+
+    .detail-button-prev {
+        left: 3rem;
+    }
+
+    .detail-button-next {
+        right: 3rem;
+    }
+
+    .pagenation_area {
+        height: 3rem;
+        position: relative;
+        z-index: 1;
+    }
+
+    .swiper-pagination-bullet {
+        width: 48px;
+        height: 4px;
+        border-radius: 0;
+        background: #c4c4c4;
+        opacity: 1;
+        transition: all 0.5s;
+        margin-right: 0.5rem;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $green;
+        width: 96px;
+    }
+}

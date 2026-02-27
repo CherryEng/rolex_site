@@ -1,0 +1,15 @@
+@use './_variables.scss' as *;
+
+html {
+	font-size: 16px;
+	font-family: $primary-font;
+	color: $pure-white;
+}
+
+body {
+	background-image: linear-gradient(90deg, $gradient-black-from, $gradient-black-to );
+}
+
+img {
+	max-width: 100%;
+}

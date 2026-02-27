@@ -1,0 +1,72 @@
+@use '../common/_variables.scss' as *;
+
+#models {
+    margin-bottom: $space-xl;
+
+    .heading {
+        text-align: center;
+        margin-bottom: $space-lg;
+
+        p {
+            font-family: $secondary-font;
+            font-size: 1.4rem;
+            letter-spacing: 0.1em;
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+
+        li {
+            background-image: linear-gradient(90deg, $gradient-light-black-from, $gradient-light-black-to);
+            border-radius: 8px;
+
+            padding: 0 $space-md;
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: color 0.5s;
+
+                .left {
+                    width: 40%;
+
+                    h4 {
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                        margin-bottom: $space-sm;
+                    }
+
+                    .desc {
+                        margin-bottom: $space-sm;
+                    }
+                }
+
+                .right {
+                    width: 50%;
+
+                    img {
+                        transition: transform 0.5s;
+                        filter: drop-shadow(0 20px 8px rgba(0, 0, 0, 0.6));
+                    }
+                }
+
+                &:hover {
+                    color: $ocean-green;
+
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

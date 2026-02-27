@@ -1,0 +1,47 @@
+@use '../common/_variables.scss' as *;
+
+.tabs {
+    margin-bottom: $space-xl;
+
+    ul {
+        width: max-content;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        gap: 6rem;
+
+        li {
+            &.active {
+                color: $ocean-green;
+                position: relative;
+            }
+
+            &.active::after {
+                content: '';
+                width: 100px;
+                height: 2px;
+                background-color: $ocean-green;
+                position: absolute;
+                bottom: -0.5rem;
+                left: 0;
+            }
+
+
+            width: 100px;
+            text-align: center;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.tab_contents {
+    display: none;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+.tab_contents.active {
+    display: block;
+    opacity: 1;
+}

@@ -1,0 +1,100 @@
+@use '../common/_variables.scss' as *;
+
+#collection {
+    position: relative;
+    margin-bottom: $space-xl;
+
+    .heading {
+        text-align: center;
+        margin-bottom: $space-lg;
+
+        p {
+            font-family: $secondary-font;
+            font-size: 1.4rem;
+            letter-spacing: 0.1em;
+        }
+
+        h2 {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+    }
+
+    .snap_btn {
+        width: 120px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        background-color: $green;
+        padding: 1rem 0;
+        border-radius: 100vh;
+        position: absolute;
+        top: 100vh;
+        right: 20%;
+        z-index: 1;
+        text-align: center;
+    }
+
+    ul {
+        height: 100vh;
+        overflow-y: hidden;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        li {
+            height: 100vh;
+
+            &.dark_theme {
+                color: $light-black;
+            }
+
+            &.light_theme {
+                color: $pure-white;
+            }
+
+
+            .details_link {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+
+                .wrap {
+                    position: relative;
+                    height: 100%;
+
+                    .text {
+                        position: absolute;
+                        bottom: 20%;
+                        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+
+                        h3 {
+                            font-size: 3rem;
+                            font-weight: 700;
+                            margin-bottom: $space-sm;
+                        }
+
+                        .desc {
+                            font-size: 2rem;
+                            margin-bottom: $space-sm;
+                        }
+
+                        .more {
+                            font-weight: 700;
+                            display: flex;
+                            gap: 0.5rem;
+                            margin-bottom: $space-sm;
+
+                            img {
+                                width: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

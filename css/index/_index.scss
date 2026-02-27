@@ -1,0 +1,6 @@
+@use '../common/_variables.scss' as *;
+
+body.snap_mode {
+	height: 100vh;
+	overflow: hidden;
+}

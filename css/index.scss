@@ -1,0 +1,23 @@
+@charset 'utf-8';
+
+// モジュール読み込み
+
+// common 
+@use 'common/_reset.scss';
+@use 'common/_variables.scss';
+@use 'common/_settings.scss';
+@use 'common/_utils.scss';
+@use 'common/_animation.scss';
+@use 'common/_header.scss';
+@use 'common/_hamburger.scss';
+@use 'common/_navigation.scss';
+@use 'common/_naviSwiper.scss';
+@use 'common/_footer.scss';
+
+// index 
+@use 'index/_hero.scss';
+@use 'index/_explore.scss';
+@use 'index/_tabMenu.scss';
+@use 'index/_collection.scss';
+@use 'index/_models.scss';
+@use 'index/_index.scss';

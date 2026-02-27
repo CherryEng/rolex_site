@@ -1,0 +1,67 @@
+@use '../common/_variables.scss' as *;
+
+#innovation {
+    height: 4000px;
+    position: relative;
+    color: $light-black;
+    margin-bottom: $space-pd;
+
+    .sequence_img {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .heading {
+        position: absolute;
+        top: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        p {
+            font-family: $secondary-font;
+            font-size: 1.6rem;
+            letter-spacing: 0.1em;
+        }
+
+        h2 {
+            font-size: 6rem;
+            font-weight: 700;
+            margin-bottom: $space-md;
+        }
+    }
+
+    .texts {
+        width: 50%;
+        position: absolute;
+        bottom: 50vh;
+        left: 5%;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: $space-md;
+        }
+
+        p {
+            width: 60%;
+            line-height: 1.5;
+            font-size: 1.25rem;
+            color: $gray;
+            margin-bottom: $space-md;
+        }
+
+        a {
+            width: 300px;
+            font-weight: 700;
+            color: $pure-white;
+            background-color: rgb(18, 119, 73);
+            padding: 1rem 0;
+            border-radius: 100vh;
+            text-align: center;
+            display: inline-block;
+        }
+    }
+}

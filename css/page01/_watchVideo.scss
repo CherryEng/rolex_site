@@ -1,0 +1,11 @@
+@use '../common/_variables.scss' as *;
+
+#watch_video {
+    margin-bottom: $space-pd;
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

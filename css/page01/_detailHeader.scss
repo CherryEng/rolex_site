@@ -1,0 +1,17 @@
+@use '../common/_variables.scss' as *;
+
+#detail_header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, $gradient-black-from, $gradient-black-to );
+    a {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+            width: 1.5rem;
+        }
+    }
+}   

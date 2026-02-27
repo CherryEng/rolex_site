@@ -1,0 +1,56 @@
+@use '../common/_variables.scss' as *;
+
+#hero {
+    height: 180vh;
+    position: relative;
+    color: $light-black;
+    background-image: url(../images/page01/hero/watch.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: $space-pd;
+
+    .heading {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        p {
+            font-family: $secondary-font;
+            font-size: 1.6rem;
+            letter-spacing: 0.1em;
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 700;
+        }
+    }
+
+    .texts {
+        position: absolute;
+        bottom: 10%;
+
+        .flex {
+            display: flex;
+
+            .left {
+                width: 50%;
+                font-size: 3rem;
+                font-weight: 700;
+            }
+
+            .right {
+                width: 50%;
+                font-size: 1.25rem;
+
+                p:nth-child(1) {
+                    margin-bottom: $space-md;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

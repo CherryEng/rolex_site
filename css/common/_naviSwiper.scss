@@ -1,0 +1,61 @@
+@use './_variables.scss' as *;
+
+.navi_carousel {
+	overflow: hidden;
+
+	.swiper {
+		width: 100%;
+		height: 100%;
+		overflow: visible;
+
+		.swiper-slide {
+			width: 30%;
+			.img {
+				overflow: hidden;
+				height: 300px;
+				margin-bottom: $space-sm;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		.bi {
+			font-size: 2rem;
+			color: $pure-white;
+			line-height: 0;
+		}
+
+		.navi-button-prev,
+		.navi-button-next {
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			transform: translateY(-50%);
+			top: 50%;
+			z-index: 2;
+			cursor: pointer;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+			display: grid;
+			place-content: center;
+		}
+
+		.navi-button-prev.swiper-button-disabled,
+		.navi-button-next.swiper-button-disabled {
+			opacity: .3;
+			cursor: auto;
+		}
+
+		.navi-button-prev {
+			left: 1rem;
+		}
+
+		.navi-button-next {
+			right: 1rem;
+		}
+	}
+}

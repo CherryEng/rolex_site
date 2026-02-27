@@ -1,0 +1,32 @@
+// color
+$pure-white: rgb(255 255 255); 
+$light-black: rgb(33, 33, 33);
+$gray: rgb(88, 88, 88);
+$light-gray: rgb(185, 185, 185);
+$green: rgb(18 119 73);
+$light-green: rgb(36, 154, 100);
+$ocean-green: rgb(155, 249, 206);
+
+// グラデーション
+$gradient-green-from: rgb(16 99 61);
+$gradient-green-to: rgb(26 145 90);
+$gradient-dark-green-from: rgb(12 76 47);
+$gradient-dark-green-to: rgb(20 115 72);
+$gradient-black-from: rgba(56, 56, 56, 1);
+$gradient-black-to: rgba(0, 0, 0, 1);
+$gradient-light-black-from: rgba(131, 131, 131, 1);
+$gradient-light-black-to: rgba(59, 59, 59, 1);
+
+
+
+// space 
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 32px;
+$space-lg: 48px;
+$space-xl: 64px;
+$space-pd: 128px;
+
+// fonts 
+$primary-font: "Helvetica Now Text",Helvetica,Arial,sans-serif;
+$secondary-font: "Zalando Sans Expanded", sans-serif;

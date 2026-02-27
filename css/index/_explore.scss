@@ -1,0 +1,40 @@
+@use '../common/_variables.scss' as *;
+
+#explore {
+    padding: $space-xl 0;
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            width: 40%;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: $ocean-green;
+        }
+
+        .right {
+            width: 50%;
+
+            p {
+                font-size: 1.25rem;
+                font-weight: 100;
+                line-height: 1.5;
+                color: $pure-white;
+                margin-bottom: $space-xl;
+            }
+
+            a {
+                color: $ocean-green;
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 1.5rem;
+                }
+            }
+        }
+    }
+}

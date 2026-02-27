@@ -1,0 +1,61 @@
+@use '../common/_variables.scss' as *;
+
+#hero {
+    height: 100vh;
+    position: relative;
+
+    .hero_visual {
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    .heading {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+
+        p {
+            font-family: $secondary-font;
+            font-size: 1.4rem;
+            letter-spacing: 0.1em;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+        }
+    }
+
+    a {
+        font-size: 1.25rem;
+        font-weight: 700;
+        width: 400px;
+        height: 4rem;
+        border-radius: 100vh;
+        background-color: rgba(90, 90, 90, 0.4);
+        backdrop-filter: blur(4px);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        justify-content: center;
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            width: 1rem;
+
+        }
+    }
+}
